@@ -1,7 +1,15 @@
 package org.nonny.com.usercontroller;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-
+@RestController
+@RequestMapping
 public class UserController {
+	
+	public String home() {
+		
+		return "Welcome to USER HOME PAGE";
+	}
 
 }
